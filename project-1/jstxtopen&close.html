@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        padding:0;
+        margin:0;
+    }
+    body{
+        background: linear-gradient(lightgreen,green,yellow,gold) repeat scroll;
+        height:100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .according{
+        width:65%;
+        background-color:white;
+        padding:30px;
+        border-radius:10px;
+    }
+    .according .according-title{
+        margin-bottom:20px;
+        text-align:center;
+    }
+    .according .content-container .question{
+        padding:16px 0;
+        font-size:22px;
+        cursor:pointer;
+        border-bottom:1px solid black;
+        position:relative;
+    }
+    .according .content-container .question::after{
+        content:"=";
+        position:absolute; 
+        right:5px;
+
+    }
+    .according .content-container .answer{
+        padding-top:15px;
+        font-size:22px;
+        line-height:1.5;
+        width:100%;
+        height:0px;
+        overflow:hidden;
+        transition: .5s;
+    }
+    /* javasript styling link */
+    .according .content-container.active .answer{
+        height:150px;
+    }
+    .according .content-container.active .question{
+        font-size:17px;
+        color:green;
+        transition: .5s;
+    }
+    .according .content-container.active .question::after{
+        content:"x";
+        font-size:20px;
+        transition: .5s;
+    }
+   </style>
+   </head>
+   <body>
+    <div class="according">
+        <h2 class="according-title"> Frequently Asked Questions</h2>
+    <div class="content-container">
+        <div class="question">Read about me</div>
+        <div class="answer">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facere, ratione exercitationem ducimus eum
+             soluta asperiores dolores animi molestiae autem repellendus, magnam nulla.
+              Doloremque molestiae maxime cum reprehenderit quam corporis amet!
+
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="question">Read about my story</div>
+        <div class="answer">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facere, ratione exercitationem ducimus eum
+             soluta asperiores dolores animi molestiae autem repellendus, magnam nulla.
+              Doloremque molestiae maxime cum reprehenderit quam corporis amet!
+
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="question">What is the return policy</div>
+        <div class="answer">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facere, ratione exercitationem ducimus eum
+             soluta asperiores dolores animi molestiae autem repellendus, magnam nulla.
+              Doloremque molestiae maxime cum reprehenderit quam corporis amet!
+
+        </div>
+    </div>
+    </div> 
+   
+    <script>
+  'use strict';
+const MAGIC = (arr1, arr2) =>
+arr1.concat(arr2);
+console.log(MAGIC([20,100], [10, 5]));
+ var myArr = [10,20,30,100];
+ var total = 0;
+ var myStr = ["mango", 2,"orange", 3];
+  console.log(myStr.toString());
+  for(var i=0; i< myArr.length; i++){
+    total += myArr[i];
+  }
+  console.log(total);
+ for (var i = 10 ; i > 0  ; i-=2)    {
+    myArr.push(i);
+ }
+ console.log(myArr);
+
+ var random = Math.floor(Math.random() * 30);
+ console.log(random);
+ function sum(num){
+     return num > 0 ? "positive" : num < 0 ? "negative" : 0;
+ }
+ console.log(sum(0));
+ </script>
+    <script src="/project-1/jstxtopen&close.js"></script>
+</body>
+</html> 

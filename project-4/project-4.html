@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-4</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding:0;
+        margin:0;
+    }
+    body{
+        background-color: papayawhip;
+        position:relative;
+
+    }
+    #open-btn{
+        position:absolute;
+        top:500px;
+        left: 10%;
+        width:350px;
+        height:88px;
+        font-size:2rem;
+        background:transparent;
+        padding:5px;
+        box-shadow: 0 0 3px white;
+        transition: .5s;
+        cursor:pointer;
+    }
+    #open-btn:hover{
+        background:white;
+        color:black;
+    }
+    #modal{
+        background-color:white;
+        position:absolute;
+          top:300px;
+          left:40%;
+          transform:translate(50%);
+          width:200px;
+          height:100px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-size: 1.5rem;
+          display:flex;
+          justify-content: space-between;
+          align-items:center;
+          animation-name: modal;
+          animation-duration: .4s;
+          transition: .2s;
+    }
+
+#close-btn{
+        font-size: 3rem;
+        cursor:pointer;
+        font-size:3rem;
+        color:#ff0000;
+    }
+    #modal-container{
+        display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1;
+    background-color: rgba(0, 0, 0, .2);
+}
+@keyframes modal{
+    from{
+        top:0;
+        opacity:0;
+    }
+to{
+top:300px;
+opacity:1;
+}
+} 
+</style>
+<body>
+    <!-- Modal open button -->
+    <button id="open-btn">
+        <p>Where is the Modal</p>
+    </button>
+
+    <!-- Modal and Modal background -->
+    <div id="modal-container">
+        <div id="modal">
+            <p>Here i am </p>
+            <div id="close-btn">
+                &times;
+            </div>
+        </div>
+    <script src="/project-4/project-4.js"></script>
+</body>
+</html>

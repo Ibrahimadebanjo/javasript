@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    *{
+        box-sizing: border-box;
+        padding:0;
+        margin:0;
+    }
+    body{
+        height:100vh; 
+        background: linear-gradient(gold,green);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .container{
+        width:60%;
+        background:white;
+        height:250px;
+        border-radius:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-flow:column;
+
+    }
+    #timer{
+        width:100%;
+        font-size:72px;
+        text-align:center;
+        margin:0px auto;
+        padding: 35px;
+    }
+    .buttons{
+        text-align:center;
+
+    }
+    button{
+        margin:0 40px;
+        font-size:20px;
+        padding:8px;
+        background:gold;
+        color:white;
+        border:none;
+        cursor:pointer;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="timer">
+            00:00:00
+        </div>
+        <div class="buttons">
+          
+            <button id="strat-btn"> Start</button>
+            <button id="strat-btn"> Stop</button>
+        </div>
+    </div>
+    <script>
+    const create = (name,age, sex) =>({name,age,sex});
+    console.log(create("ibrahim", 50 , "male"));
+    </script>
+    <script src="./stopwatch.js"></script>
+</body>
+</html>

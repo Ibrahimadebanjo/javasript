@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --blue :  blue;
+            --purple: purple;
+        }
+        *{
+            align-items:center;
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        textarea{
+            resize: none;
+            width:500px;
+            padding:10px;
+            font-size:20px;
+            border:none;
+        }
+        body{
+            text-align:center;
+            height:100vh;
+            display:flex;
+            background : linear-gradient(var(--blue), var(--purple));
+align-items: center;
+justify-content: center;
+flex-flow:column;
+        }
+        .container{
+            margin-top:20px;
+        }
+        h2{
+            color:var(--purple);
+            font-size:30px;
+        }
+        .btn{
+            margin-top:10px;
+            display:flex;
+          justify-content:space-around;
+          align-items:center;
+        }
+        button{
+            padding:12px;
+            cursor:pointer;
+            color:green;
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Textarea manipulation</h2>
+    <div class="container">
+       
+        <textarea name="textarea" id="textarea" cols="30" rows="10">
+            
+        </textarea>
+        <div class="btn">
+        <button class="clear-text"> Clear Text </button>
+        <button class="display-text"> Display  </button>
+        <!-- <button type="button"> Hello world</button> -->
+    </div>
+    </div>
+    <script src="/project-3/project-3.js" ></script>
+</body>
+</html>
